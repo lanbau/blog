@@ -1,0 +1,8 @@
+<!-- <h1>{{model.title}}</h1>
+<h2>{{model.user.email}}</h2>
+<p>{{model.body}}</p> -->
+{{#if isInEditMode}}
+  {{post-edit post=model save='save' cancel='cancel'}}
+{{else}}
+  {{post-view post=model edit='edit'}}
+{{/if}}
